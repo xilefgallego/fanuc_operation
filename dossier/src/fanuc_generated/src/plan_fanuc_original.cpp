@@ -95,6 +95,7 @@ int main(int argc, char **argv)
   group.setPoseTarget(target_pose1);
 
 
+
   // Now, we call the planner to compute the plan
   // and visualize it.
   // Note that we are just planning, not asking move_group 
