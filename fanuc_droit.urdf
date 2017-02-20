@@ -1,0 +1,379 @@
+<?xml version="1.0" ?>
+<robot name="fanuc" xmlns:xacro="http://ros.org/wiki/xacro">
+  
+	<link name="base_link"> 
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="3.5 0.5 0.3"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.9 0 0 1.0"/> 
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="3.5 0.5 0.3"/>
+      </geometry>
+    </collision>
+  </link>
+
+
+  <link name="base_robot1"> 
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/visual/base_link.stl"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.4 0.4 0.4 1.0"/> 
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/collision/base_link.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_1">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/visual/link_1.stl"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/collision/link_1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_2">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/visual/link_2.stl"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/collision/link_2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_3">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/visual/link_3.stl"/>
+      </geometry>
+      <material name="">
+        <color rgba="0 0.76 0.13 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/collision/link_3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_4">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/visual/link_4.stl"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/collision/link_4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_5">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/visual/link_5.stl"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0 0.13 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/collision/link_5.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_6">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/visual/link_6.stl"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.15 0.15 0.15 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/collision/link_6.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="tool0"/>
+
+
+  <link name="base_robot2"> 
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/visual/base_link.stl"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.4 0.4 0.4 1.0"/> 
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/collision/base_link.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_12">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/visual/link_1.stl"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/collision/link_1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_22">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/visual/link_2.stl"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/collision/link_2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_32">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/visual/link_3.stl"/>
+      </geometry>
+      <material name="">
+        <color rgba="0 0.76 0.13 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/collision/link_3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_42">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/visual/link_4.stl"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0.76 0.13 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/collision/link_4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_52">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/visual/link_5.stl"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.96 0 0.13 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/collision/link_5.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_62">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/visual/link_6.stl"/>
+      </geometry>
+      <material name="">
+        <color rgba="0.15 0.15 0.15 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/collision/link_6.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="tool1"/>
+
+
+  <joint name="joint_DEPART_ROBOT1" type="fixed">
+    <origin rpy="0 0 0" xyz="-1.25 0 0.15"/>
+    <parent link="base_link"/>
+    <child link="base_robot1"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <joint name="joint_DEPART_ROBOT2" type="fixed">
+    <origin rpy="0 0 3.14" xyz="1.25 0 0.15"/>
+    <parent link="base_link"/>
+    <child link="base_robot2"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+
+  <joint name="joint_1" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.450"/>
+    <parent link="base_robot1"/>
+    <child link="link_1"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="0" lower="-3.14" upper="3.14" velocity="3.67"/>
+  </joint>
+  <joint name="joint_2" type="revolute">
+    <origin rpy="0 0 0" xyz="0.150 0 0"/>
+    <parent link="link_1"/>
+    <child link="link_2"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="0" lower="-1.57" upper="2.79" velocity="3.32"/>
+  </joint>
+  <joint name="joint_3" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.600"/>
+    <parent link="link_2"/>
+    <child link="link_3"/>
+    <axis xyz="0 -1 0"/>
+    <limit effort="0" lower="-1.60" upper="2.66" velocity="3.67"/>
+  </joint>
+  <joint name="joint_4" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.200"/>
+    <parent link="link_3"/>
+    <child link="link_4"/>
+    <axis xyz="-1 0 0"/>
+    <limit effort="0" lower="-3.31" upper="3.31" velocity="6.98"/>
+  </joint>
+  <joint name="joint_5" type="revolute">
+    <origin rpy="0 0 0" xyz="0.640 0 0"/>
+    <parent link="link_4"/>
+    <child link="link_5"/>
+    <axis xyz="0 -1 0"/>
+    <limit effort="0" lower="-2.30" upper="2.30" velocity="6.98"/>
+  </joint>
+  <joint name="joint_6" type="revolute">
+    <origin rpy="0 0 0" xyz="0.100 0 0"/>
+    <parent link="link_5"/>
+    <child link="link_6"/>
+    <axis xyz="-1 0 0"/>
+    <limit effort="0" lower="-6.28" upper="6.28" velocity="10.47"/>
+  </joint>
+  <joint name="joint_6-tool0" type="fixed">
+    <origin rpy="3.1415926535 -1.570796327 0" xyz="0 0 0"/>
+    <parent link="link_6"/>
+    <child link="tool0"/>
+  </joint>
+
+
+  <joint name="joint_12" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.450"/>
+    <parent link="base_robot2"/>
+    <child link="link_12"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="0" lower="-3.14" upper="3.14" velocity="3.67"/>
+  </joint>
+  <joint name="joint_22" type="revolute">
+    <origin rpy="0 0 0" xyz="0.150 0 0"/>
+    <parent link="link_12"/>
+    <child link="link_22"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="0" lower="-1.57" upper="2.79" velocity="3.32"/>
+  </joint>
+  <joint name="joint_32" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.600"/>
+    <parent link="link_22"/>
+    <child link="link_32"/>
+    <axis xyz="0 -1 0"/>
+    <limit effort="0" lower="-1.60" upper="2.66" velocity="3.67"/>
+  </joint>
+  <joint name="joint_42" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.200"/>
+    <parent link="link_32"/>
+    <child link="link_42"/>
+    <axis xyz="-1 0 0"/>
+    <limit effort="0" lower="-3.31" upper="3.31" velocity="6.98"/>
+  </joint>
+  <joint name="joint_52" type="revolute">
+    <origin rpy="0 0 0" xyz="0.640 0 0"/>
+    <parent link="link_42"/>
+    <child link="link_52"/>
+    <axis xyz="0 -1 0"/>
+    <limit effort="0" lower="-2.30" upper="2.30" velocity="6.98"/>
+  </joint>
+  <joint name="joint_62" type="revolute">
+    <origin rpy="0 0 0" xyz="0.100 0 0"/>
+    <parent link="link_52"/>
+    <child link="link_62"/>
+    <axis xyz="-1 0 0"/>
+    <limit effort="0" lower="-6.28" upper="6.28" velocity="10.47"/>
+  </joint>
+  <joint name="joint_62-tool1" type="fixed">
+    <origin rpy="3.1415926535 -1.570796327 0" xyz="0 0 0"/>
+    <parent link="link_62"/>
+    <child link="tool1"/>
+  </joint>
+</robot>
+
